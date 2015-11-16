@@ -12,7 +12,6 @@ header {
 	margin-bottom:5px;
 }
 nav {
-	position: fixed;
 	height: expression(document.body.clientHeight - 80 + "px");
 	background-color: lightblue;
 	border: 2px solid darkgrey;
