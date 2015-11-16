@@ -5,6 +5,7 @@ body {
 	padding-top: 10px;
 }
 header {
+	background-image: url=(http://www.europaeischer-wettbewerb.de/wp-content/uploads/2015/04/ewlogo1.png);
 	background-color: blue;
 	border: 3px solid darkblue;
 	border-radius: 14px;
