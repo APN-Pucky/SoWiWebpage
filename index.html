@@ -15,7 +15,7 @@
 		<header>
 			<h1>Gewallt im Alltag<h1>		
 		</header>
-		<nav>
+		<nav id="navigation">
 			<ul>
 				<li>
 					<a href="index.html" title="Kehre zur Startseite zurück"> Home </a>
@@ -104,4 +104,43 @@
 			</a>
 		</footer>
 	</body>
+	<script>
+		var nutzbar = false;
+		if (document.body.style.scrollbar3dLightColor != undefined) //IE {
+			if (document.body.style.msInterpolationMode != undefined) //IE > 6 {
+				nutzbar = true;
+			}
+		}
+		else {
+			nutzbar = true; 
+		} 
+		
+		/* Beginn Ereignisüberwachung */
+		if (nutzbar == true) {
+			addEvent(window, "load", fixieren); 
+			addEvent(window, "resize", fixieren); 
+			addEvent(window, "scroll", fixieren); 
+		}
+		/* Ende Ereignisüberwachung */
+		
+		if (document.getElementById("navigation")) {
+			var nav = document.getElementById("navigation"); 
+			var html = document.getElementsByTagName("html")[0];
+			var top_nav = Math.round(nav.getBoundingClientRect().top); 
+			var top_html = Math.round(html.getBoundingClientRect().top);
+			var dist_html_nav = top_nav - top_html; 
+		}
+		
+		function fixieren() {
+			var scrollweite; 
+			if (nav) { 
+				window.getComputedStyle ? scrollweite = pageYOffset : scrollweite = document.documentElement.scrollTop;
+				if (scrollweite + 8 > dist_html_nav ) {
+					nav.style.position = "fixed"; nav.style.top = "8px";
+				} else {
+					nav.style.position = ""; nav.style.top = ""; 
+				}
+			}
+		}
+	</script>
 </html>
