@@ -1,0 +1,19 @@
+#text {
+	height:75%;
+	width:90%;
+	border:1px solid #ccc;
+	overflow:auto;
+	font-size:100%;
+	white-space: nowrap;
+}
+
+#input {
+	height:5%;
+	width:75%;
+	border:1px solid #ccc;
+}
+
+#say {
+	height:5%;
+	width:15%;
+}
