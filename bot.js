@@ -12,12 +12,18 @@ function say(){
 	respond(input.value);
 	input.value = "";
 }
+function sayBot(text) {
+	println("Bot: " + text);
+}
 function respond(text) {
-	println("Bot: You said: " + text);
+	sayBot(text);
+	sayBot("You use: " + navigator.userAgent.match(/\w*/)[0]);
+	sayBot("on       " + navigator.platform.match(/\w*/)[0]);
 }
 function init() {
 	var button = document.getElementById('say');	
 	button.addEventListener('click', say,true);
+	sayBot("Lol, du Spast!");
 }
 
 
