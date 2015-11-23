@@ -1,6 +1,10 @@
 function println(text) {
 	//add filter
-	document.getElementById('text').innerHTML += text + "<br>";
+	text = text.toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+	var textfield = document.getElementById('text');
+	textfield.innerHTML += text + "<br>";
+	textfield.scrollTo(0,textfield.scrollHeight);
+	
 }
 function say(){
 	var input = document.getElementById('input');
