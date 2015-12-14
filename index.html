@@ -20,6 +20,19 @@
 		<link href='sm-core-css.css' rel='stylesheet' type='text/css' />
 		<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
 		<link href='sm-blue/sm-blue.css' rel='stylesheet' type='text/css' />
+		<!-- #main-menu config - instance specific stuff not covered in the theme -->
+		<!-- Put this in an external stylesheet if you want the media query to work in IE8 (e.g. where the rest of your page styles are) -->
+		<style type="text/css">
+			@media (min-width: 768px) {
+				#main-menu {
+					position: relative;
+					z-index: 9999;
+				}
+				#main-menu ul {
+					width: 12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+				}
+			}
+		</style>
 		<!-- SmartMenus jQuery init -->
 		<script type="text/javascript">
 			$(function() {
