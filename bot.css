@@ -1,6 +1,6 @@
 #text {
-	height:75%;
-	width:90%;
+	height:400px;
+	width:100%;
 	border:1px solid #ccc;
 	overflow:auto;
 	font-size:100%;
@@ -8,12 +8,12 @@
 }
 
 #input {
-	height:5%;
+	height:50px;
 	width:75%;
 	border:1px solid #ccc;
 }
 
 #say {
-	height:5%;
-	width:15%;
+	height:50px;
+	width:24%;
 }
