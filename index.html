@@ -13,8 +13,6 @@
 	
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		
-		<script src="bootstrap.js"></script>
-		<link rel="stylesheet" href="bootstrap.css" type="text/css" />
 		<script language="javascript" type="text/javascript">
   			function resizeIframe(obj) {
     				obj.style.height = (obj.contentWindow.document.body.scrollHeight+10) + 'px';
@@ -24,6 +22,12 @@
 	
 	
 	<body>
+		<header>
+			<a href="http://www.europaeischer-wettbewerb.de/">
+				<img id="euWettbewerbIcon" src="http://www.europaeischer-wettbewerb.de/wp-content/uploads/2015/04/ewlogo1.png" 
+						alt="EU-Wettbewerb" title="Europäischer Wettbewerb" />
+			</a>
+		</header>
 		<nav id="navigation" style="height:63px;">
 			<div data-spy="affix" data-offset-top="1000"></div>
 				<ul id="main-menu" class="sm sm-blue">
@@ -33,13 +37,14 @@
 					<li>
 						<a href="gewalt.html" title="Gewalt - Definition"> Gewalt </a>
 					</li>
+					<li>
+						<a href = "kontakt.html" title = "Zu den Kontakten"> Kontakt </a>
+					</li>
 				</ul>
 			</div>
 			
 		</nav>
 		<!-- iframe mit inhalt -->
-		<h1>KANNST DU MICH BITTE IN SERIOUS BUSINESS ZIEHEN?</h1>
-		<p>danke!</p>
 		<iframe id="ifrm" onload="resizeIframe(this)" src="home.html" style="width:90%"> </iframe>
 <footer>
 			<p>
@@ -56,10 +61,6 @@
 				Desweiteren best&auml;tigen sie, dass sie unsere <b><a href="AGB.html" title="Allgemeine Gesch&auml;ftsbedingungen">allgemeinen Gesch&auml;ftsbedingungen (AGB)</a></b> und die <b><a href="TOU" title="Terms of Use">Terms of Use</a></b> durchgelesen und akzeptiert haben.
 				Sie best&auml;tigen zudem, dass sie keine Informationen an Drittanbieter weitergeben.
 			</p>
-			<a href="http://www.europaeischer-wettbewerb.de/">
-				<img id="euWettbewerbIcon" src="http://www.europaeischer-wettbewerb.de/wp-content/uploads/2015/04/ewlogo1.png" 
-					alt="EU-Wettbewerb" title="Europäischer Wettbewerb" />
-			</a>
 		</footer>
 	</body>
 </html>
