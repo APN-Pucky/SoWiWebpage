@@ -11,10 +11,8 @@
 		<meta name="keywords" content="HTML, CSS, Europawettbewerb, Website, Projekt, Gewalt im Alltag" />
 	<base href="" target="_self" />
 	
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="stickyMenu.js"></script>	
-		<script src="bootstrap.js"></script>
-		<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+		<script src="jquery.js"></script>
+		<script src="stickyMenu.js"></script>
 		<script language="javascript" type="text/javascript">
   			function resizeIframe(obj) {
     				obj.style.height = (obj.contentWindow.document.body.scrollHeight+10) + 'px';
@@ -24,7 +22,7 @@
 	
 	
 	<body>
-		<div class="menu" onload="initSticky()">
+		<div class="menu" >
 		<nav id="navigation" style="height:63px;">
 				<ul id="main-menu">
 					<li>
@@ -60,5 +58,6 @@
 					alt="EU-Wettbewerb" title="Europäischer Wettbewerb" />
 			</a>
 		</footer>
+		<script> initSticky();</script>
 	</body>
 </html>
