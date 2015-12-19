@@ -17,11 +17,21 @@ header {
 header h1 {
 	text-align: left;
 	padding-left: 40%;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 2px 2px #600000;
 	font-family: sans-serif;
 }
+header a {
+	color: black;
+}
 header a{
-	
+	text-decoration: none;
+}
+.europalink {
+	font-size: 40px;
+}
+.gymwolbeck {
+	font-size: 25px;
+	color: #7923a4;
 }
 nav {
 	background-color: #6db9eb;
@@ -31,7 +41,6 @@ nav {
 }
 nav a {
 	padding: 4px 6px;
-	
 	text-decoration: none;
 }
 .navelem {
@@ -44,7 +53,7 @@ nav a {
         border: 1px solid blue;
         border-radius: 5px;
 }
-nav a:hover, a:active {
+nav a:hover, nav a:active {
 	background-color:white;
 	border: 4px solid blue;
 	border-radius:5px;
