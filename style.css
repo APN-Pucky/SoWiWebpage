@@ -45,6 +45,8 @@ nav a:hover {
 	text-transform: uppercase;
 	letter-spacing:1px;
 	font-weight:bold;
+	cursor: pointer;
+	cursor: hand;
 }
 nav ul li {
 	display:inline;
