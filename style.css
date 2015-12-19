@@ -34,10 +34,15 @@ nav a {
 	
 	text-decoration: none;
 }
-.navelem .gb {
+.navelem {
 	color: black;
 	border: 1px solid blue;
 	border-radius: 5px;
+}
+.gb {
+	color: black;
+        border: 1px solid blue;
+        border-radius: 5px;
 }
 nav a:hover, a:active {
 	background-color:white;
