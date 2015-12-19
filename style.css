@@ -23,7 +23,7 @@ nav a {
 	
 	text-decoration: none;
 }
-nav a:link, a:visited {
+.navelem {
 	color: black;
 	border: 1px solid blue;
 	border-radius: 5px;
