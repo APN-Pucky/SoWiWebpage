@@ -13,7 +13,7 @@ function initNavElem() {
 	});
 }
 function initSticky() {
-	$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+	$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','2').css('z-index','500').removeClass('original').hide();
 
 	scrollIntervalID = setInterval(stickIt, 10);
 }
@@ -22,7 +22,7 @@ function stickIt() {
   var orgElementPos = $('.original').offset();
   orgElementTop = orgElementPos.top;               
 
-  if ($(window).scrollTop() >= (orgElementTop)) {
+  if ($(window).scrollTop() >= (orgElementTop - 2)) {
 
     orgElement = $('.original');
     coordsOrgElement = orgElement.offset();
