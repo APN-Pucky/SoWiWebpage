@@ -17,7 +17,7 @@
   			function resizeIframe(obj) {
     				obj.style.height = (obj.contentWindow.document.body.scrollHeight+10) + 'px';
   			}
-		</script>		
+		</script>
 	</head>
 	
 	
@@ -36,10 +36,10 @@
 		<nav id="navigation" style="height:63px;">
 				<ul id="main-menu">
 					<li>
-						<a href="index.html" title="Kehre zur Startseite zurück"> Home </a>
+						<a class="navelem" ref="home.html" title="Kehre zur Startseite zurück"> Home </a>
 					</li>		
 					<li>
-						<a href="gewalt.html" title="Gewalt - Definition"> Gewalt </a>
+						<a class="navelem" ref="gewalt.html" title="Gewalt - Definition"> Gewalt </a>
 					</li>
 				</ul>
 			</div>
@@ -47,7 +47,7 @@
 		</nav>
 		</div>
 		<!-- iframe mit inhalt -->
-		<iframe id="ifrm" onload="resizeIframe(this)" src="home.html" style="width:90%"> </iframe>
+		<iframe id="ifrm" onload="resizeIframe()" src="home.html" style="width:90%"> </iframe>
 <footer>
 			<p>
 				Diese Website ist von Alexander Neuwith, Nils Jatho und Joey Sigrist geschrieben und f&uuml;r den europ&auml;ischen Wettbewerb gedacht.
@@ -64,6 +64,6 @@
 				Sie best&auml;tigen zudem, dass sie keine Informationen an Drittanbieter weitergeben.
 			</p>
 		</footer>
-		<script> initSticky();</script>
+		<script src="glob.js"></script>
 	</body>
 </html>

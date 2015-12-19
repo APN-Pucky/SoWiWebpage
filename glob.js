@@ -1,4 +1,14 @@
-// Create a clone of the menu, right next to original.
+function init() {
+	initSticky();
+	initNavElem();
+}
+
+function initNavElem() {
+	$('.navelem').click(function() {
+		$('#ifrm').attr('src',$(this).attr('ref'));
+		resizeIframe();
+	});
+}
 function initSticky() {
 	$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','2').css('z-index','500').removeClass('original').hide();
 
@@ -6,14 +16,11 @@ function initSticky() {
 }
 
 function stickIt() {
-
   var orgElementPos = $('.original').offset();
   orgElementTop = orgElementPos.top;               
 
-  if ($(window).scrollTop() >= (orgElementTop) - 2) {
-    // scrolled past the original position; now only show the cloned, sticky element.
+  if ($(window).scrollTop() >= (orgElementTop - 2)) {
 
-    // Cloned element should always have same left position and width as original element.     
     orgElement = $('.original');
     coordsOrgElement = orgElement.offset();
     leftOrgElement = coordsOrgElement.left;  
@@ -26,3 +33,12 @@ function stickIt() {
     $('.original').css('visibility','visible');
   }
 }
+
+function resizeIframe() {
+		$('#ifrm').css({'height':1+'px'});
+		$('#ifrm').css({'height': (document.getElementById('ifrm').contentWindow.document.body.scrollHeight+10) + 'px'});
+}
+
+
+
+init();
