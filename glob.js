@@ -1,12 +1,15 @@
+var $gbifrmheight = 1000;
 function init() {
 	initSticky();
 	initNavElem();
 }
 
 function initNavElem() {
+	$('.gb').click(function() {
+		$('#ifrm').attr('src',$(this).attr('ref'));
+	});
 	$('.navelem').click(function() {
 		$('#ifrm').attr('src',$(this).attr('ref'));
-		resizeIframe();
 	});
 }
 function initSticky() {
@@ -35,8 +38,16 @@ function stickIt() {
 }
 
 function resizeIframe() {
+		//var h = $('#ifrm').height();
 		$('#ifrm').css({'height':1+'px'});
-		$('#ifrm').css({'height': (document.getElementById('ifrm').contentWindow.document.body.scrollHeight+10) + 'px'});
+		try
+		{
+			$('#ifrm').css({'height': (document.getElementById('ifrm').contentWindow.document.body.scrollHeight+10) + 'px'});
+		}
+		catch(err)
+		{
+			$('#ifrm').css({'height':$gbifrmheight+'px'});
+		}
 }
 
 

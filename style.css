@@ -23,7 +23,7 @@ nav a {
 	
 	text-decoration: none;
 }
-.navelem {
+.navelem .gb {
 	color: black;
 	border: 1px solid blue;
 	border-radius: 5px;
@@ -69,7 +69,6 @@ section {
 	margin-top: 25px;
 	padding: 10px;
 	background-color: #FFFFFF;
-	
 }
 footer {
 	background-color:#DDDDDD;
