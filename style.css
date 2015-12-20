@@ -47,7 +47,7 @@ nav {
 	border: 2px solid darkgrey;
 	border-radius: 7px;
 	font-size: 125%;
-	text-align:center;
+	margin: 0 auto; 
 }
 
 .navelem, .gb {
