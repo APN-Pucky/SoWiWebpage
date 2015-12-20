@@ -82,7 +82,7 @@ nav {
 }
 
 #main-menu a:hover, a:active {
-        
+        color:red;
 	cursor: pointer;
 	cursor: hand;
 }
