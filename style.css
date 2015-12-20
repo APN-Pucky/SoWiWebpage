@@ -54,6 +54,9 @@ nav {
 	border: 1px solid blue;
 	border-radius: 5px;
 }
+.playerbutton {
+	color: black;
+}
 
 .europalink {
 	font-size: 40px;
@@ -82,13 +85,13 @@ nav {
 }
 
 #main-menu a:hover, a:active {
-        color:red;
+    color:red;
 	cursor: pointer;
 	cursor: hand;
 }
 
 #main-menu li {
-	left:0%;/*hier kann man verscheiben*/
+	left:0%;/*hier kann man verschieben*/
 	float:left;
 	vertical-align:middle;
 	position:relative
@@ -102,7 +105,7 @@ nav {
 }
 
 #main-menu ul {
-	left:-40;
+	left:-37;
 	position:absolute;
 	visibility:hidden;
 	z-index:598;
