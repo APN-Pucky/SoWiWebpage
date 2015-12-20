@@ -2,7 +2,7 @@ var $dein = "was ist deine";
 var $mein = $dein +" Meinung zu";
 var $themen = [$mein +"m Syrien Konflikt", $mein+"m besten Musikgenre", $mein+"r NSA und BND Affäre", $dein + "r Meinung nach der beste Film", "ist dir der Schutz vor Terror oder die eigene Freiheit wichtiger", "was denkst du über die Klimakrise", "glaubst du an Gott"];
 var $greet = ["Hallo, ", "Schönes Wetter heute, ","Moin, ", "Guten Tag, "];
-var $resp1=["Ist das dein Ernst!?   Wie kann man nur so dumm sein?!?", "Ich hoffe dich überfährt ein Panzer", "Das ist keine Aussage.", "hahahahaha"]; 
+var $resp1=["Ist das dein Ernst!?   Wie kann man nur so dumm sein?!?", "Ich hoffe dich überfährt ein Panzer.", "Das ist keine Aussage.", "hahahahaha"]; 
 var $resp3=["Was machst du noch auf meiner Seite?","Hau ab!","Stirb einen grausamen Tod!", "Du Witzfigur"];
 var $resp4=["Abschaum wie dich kann ich hier nicht brauchen!","Arschloch","Lol, immer dies Trolle im Internet"];
 var $resp5=["Ich weiß wo du wohnst, weil du auf meinem Server mit deiner IP warst. Jetzt rufe ich bei der Polizei an und sage dass ich Schüße und schreie aus deinem Hasu gehört habe!", "Mit dir brauch ich nicht weiter reden."];
@@ -44,7 +44,7 @@ function respond(text) {
        			$repl = text;		
 			break;
     		case 2:
-			sayBot("Jedes Kind weiß doch, dass die Aussage:\"" + $repl+ "\" nicht wahr ist. Was für ein Mensch müsste man sein um so etwas von sich zu geben?!?");
+			sayBot("Jedes Kind weiß doch, dass die Aussage:\"" + $repl+ "\" BULLSHIT ist. Was für ein Mensch müsste man sein um so etwas von sich zu geben?!?");
         		break;
 		case 3:
 			sayBot(r($resp3)); 
@@ -64,8 +64,6 @@ function init() {
 	button.addEventListener('click', say,true);
 	$thema = rr($themen);
 	sayBot(r($greet) + $themen[$thema] +"?");
-	navigator.geolocation.getCurrentPosition(function(position) {
-	});
 }
 
 
