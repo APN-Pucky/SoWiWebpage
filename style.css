@@ -81,6 +81,7 @@ nav {
 	padding: 4px 16px;
 	text-decoration: none;
 	display:block;
+	white-space:nowrap;
 }
 
 #main-menu a:hover, a:active {
