@@ -1,3 +1,21 @@
+var $dein = "was ist deine";
+var $mein = $dein +" Meinung zu";
+var $themen = [$mein +"m Syrien Konflikt", $mein+"m besten Musikgenre", $mein+"r NSA und BND Affäre", $dein + "r Meinung nach der beste Film", "ist dir der Schutz vor Terror oder die eigene Freiheit wichtiger", "was denkst du über die Klimakrise", "glaubst du an Gott"];
+var $greet = ["Hallo, ", "Schönes Wetter heute, ","Moin, ", "Guten Tag, "];
+var $resp1=["Ist das dein Ernst!?   Wie kann man nur so dumm sein?!?", "Ich hoffe dich überfährt ein Panzer", "Das ist keine Aussage.", "hahahahaha"]; 
+var $resp3=["Was machst du noch auf meiner Seite?","Hau ab!","Stirb einen grausamen Tod!", "Du Witzfigur"];
+var $resp4=["Abschaum wie dich kann ich hier nicht brauchen!","Arschloch","Lol, immer dies Trolle im Internet"];
+var $resp5=["Ich weiß wo du wohnst, weil du auf meinem Server mit deiner IP warst. Jetzt rufe ich bei der Polizei an und sage dass ich Schüße und schreie aus deinem Hasu gehört habe!", "Mit dir brauch ich nicht weiter reden."];
+var $thema=-1;
+var $runlevel=0;
+var $repl;
+function rr(a) {
+	return Math.floor((Math.random() *a.length) );
+}
+function r(a)
+{
+	return a[rr(a)];
+}
 function escape(text) {
 	return text.toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;") + "<br>";
 	
@@ -19,15 +37,35 @@ function sayBot(text) {
 //run level.....1,2,3,4
 function respond(text) {
 	//sayBot(text);
-	sayBot("Ist das dein Ernst!?	Wie kann man nur so dumm sein?!?");	
-	sayBot("Jedes Kind weiß doch, dass ...");
-	sayBot("Was machst du noch auf meiner Seite?	Abschaum wie dich kann ich hier nicht brauchen!");
+	$runlevel++;
+	switch($runlevel) {
+    		case 1:
+			sayBot(r($resp1));	
+       			$repl = text;		
+			break;
+    		case 2:
+			sayBot("Jedes Kind weiß doch, dass die Aussage:\"" + $repl+ "\" nicht wahr ist. Was für ein Mensch müsste man sein um so etwas von sich zu geben?!?");
+        		break;
+		case 3:
+			sayBot(r($resp3)); 
+			break;
+		case 4:
+			sayBot(r($resp4));
+			break;
+		case 5:
+			sayBot(r($resp5));
+		default:
+			
+	} 
 }
 //themen: Klimakrise, Weltpolitik, Religion, Geschmack(Film, Musik) -------->>> shitstorm
 function init() {
 	var button = document.getElementById('say');	
 	button.addEventListener('click', say,true);
-	sayBot("Hallo, was ist deine Meinung zu" + "Thema");
+	$thema = rr($themen);
+	sayBot(r($greet) + $themen[$thema] +"?");
+	navigator.geolocation.getCurrentPosition(function(position) {
+	});
 }
 
 
