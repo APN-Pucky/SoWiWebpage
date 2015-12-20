@@ -88,10 +88,13 @@ nav {
 }
 
 #main-menu li {
-	left:30%;
+	left:0%;/*hier kann man verscheiben*/
 	float:left;
 	vertical-align:middle;
 	position:relative
+}
+#main-menu li ul li {
+	left:20%;
 }
 
 #main-menu li:hover>ul {
