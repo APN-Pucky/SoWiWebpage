@@ -17,8 +17,12 @@ header {
 header h1 {
 	text-align: left;
 	padding-left: 40%;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 2px 2px #600000;
 	font-family: sans-serif;
+}
+header a {
+	color: black;
+	text-decoration: none;
 }
 section {
 	background-color:#F7F7F7;
@@ -49,6 +53,14 @@ nav {
 	color: black;
 	border: 1px solid blue;
 	border-radius: 5px;
+}
+
+.europalink {
+	font-size: 40px;
+}
+.gymwolbeck {
+	font-size: 25px;
+	color: #7923a4;
 }
 
 
