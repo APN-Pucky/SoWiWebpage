@@ -132,3 +132,9 @@ nav {
 	border-radius: 40px;
 	float: left;
 }
+
+
+#hilfe li {
+	text-decoration:none;
+	color:black
+}
