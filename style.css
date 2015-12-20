@@ -97,7 +97,8 @@ nav {
 	position:relative
 }
 #main-menu li ul li {
-	left:20%;
+	left:0%;
+	font-size: 15px;
 }
 
 #main-menu li:hover>ul {
@@ -105,10 +106,11 @@ nav {
 }
 
 #main-menu ul {
-	left:-37;
+	left:0;
 	position:absolute;
 	visibility:hidden;
 	z-index:598;
+	background-color: #6db9eb;
 }
 
 
