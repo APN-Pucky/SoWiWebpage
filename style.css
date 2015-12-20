@@ -134,6 +134,7 @@ nav {
 }
 
 
-#hilfe {
+#hilfe li {
 	text-decoration:none;
+	color:black
 }
