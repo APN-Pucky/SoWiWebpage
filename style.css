@@ -30,7 +30,6 @@ section {
 	border-radius:5px;
 	margin:15px 50px 0px 50px;
 	padding:25px;
-	
 	text-align:left;
 }
 
@@ -47,7 +46,6 @@ nav {
 	border: 2px solid darkgrey;
 	border-radius: 7px;
 	font-size: 125%;
-	margin: 0 auto; 
 }
 
 .navelem, .gb {
@@ -67,14 +65,10 @@ nav {
 	color: #7923a4;
 }
 
-#menu {
-	margin: 0 auto; 
-}
 #main-menu, #main-menu li, #main-menu ul {
 		list-style:none outside none;
 		margin:0pt;
 		padding:5pt;
-		text-align:center;
 }
 
 #main-menu ul, #main-menu li {
