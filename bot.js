@@ -5,7 +5,7 @@ var $greet = ["Hallo, ", "Schönes Wetter heute, ","Moin, ", "Guten Tag, "];
 var $resp1=["Ist das dein Ernst!?   Wie kann man nur so dumm sein?!?", "Ich hoffe dich überfährt ein Panzer.", "Das ist keine Aussage.", "hahahahaha"]; 
 var $resp3=["Was machst du noch auf meiner Seite?","Hau ab!","Stirb einen grausamen Tod!", "Du Witzfigur"];
 var $resp4=["Abschaum wie dich kann ich hier nicht brauchen!","Arschloch","Lol, immer dies Trolle im Internet"];
-var $resp5=["Ich weiß wo du wohnst, weil du auf meinem Server mit deiner IP warst. Jetzt rufe ich bei der Polizei an und sage dass ich Schüße und schreie aus deinem Hasu gehört habe!", "Mit dir brauch ich nicht weiter reden."];
+var $resp5=["Ich weiß wo du wohnst, weil du auf meinem Server mit deiner IP warst. Jetzt rufe ich bei der Polizei an und sage dass ich Schüsse und Schreie aus deinem Haus gehört habe!", "Mit dir brauch ich nicht weiter reden."];
 var $thema=-1;
 var $runlevel=0;
 var $repl;
@@ -27,9 +27,12 @@ function printlnUnescaped(text) {
 }
 function say(){
 	var input = document.getElementById('input');
-	printlnUnescaped("<font color='blue'>"+"You: " + escape(input.value)+"</font>");
-	respond(input.value);
+	if(!/^\s*$/.test(input.value)) {	
+		printlnUnescaped("<font color='blue'>"+"You: " + escape(input.value)+"</font>");
+		respond(input.value);
+	}
 	input.value = "";
+	
 }
 function sayBot(text) {
 	printlnUnescaped("<font color='red'>"+"Bot: " + escape(text) + "</font>");
