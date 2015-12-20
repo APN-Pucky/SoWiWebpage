@@ -1,17 +1,8 @@
 var $gbifrmheight = 1000;
+
 function init() {
 	initSticky();
 	initNavElem();
-	initHover();
-}
-
-function initHover() {
-	$('.navhover').hover(	function () {
-			$('.navelemmenu').css({'left':$('#navhover').css('left')+ 'px'});
-			$('.navelemmenu').slideDown('medium');},
-				function () {
-			$('.navelemmenu').slideUp('medium');}
-	);	
 }
 
 function initNavElem() {
