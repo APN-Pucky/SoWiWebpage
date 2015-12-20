@@ -54,6 +54,9 @@ nav {
 	border: 1px solid blue;
 	border-radius: 5px;
 }
+.playerbutton {
+	color:blue;
+}
 
 .europalink {
 	font-size: 40px;
