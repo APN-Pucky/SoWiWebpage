@@ -46,6 +46,7 @@ nav {
 	border: 2px solid darkgrey;
 	border-radius: 7px;
 	font-size: 125%;
+	margin:auto;
 }
 
 .navelem, .gb {
@@ -63,10 +64,6 @@ nav {
 .gymwolbeck {
 	font-size: 25px;
 	color: #7923a4;
-}
-
-#menu{
-	
 }
 
 #main-menu, #main-menu li, #main-menu ul {
