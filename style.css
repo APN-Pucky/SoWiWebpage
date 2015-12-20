@@ -67,7 +67,7 @@ nav {
 
 #main-menu, #main-menu li, #main-menu ul {
 		list-style:none outside none;
-		text-align:center;
+		margin:auto;
 		
 }
 
