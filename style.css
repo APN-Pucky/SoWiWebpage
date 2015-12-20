@@ -67,7 +67,9 @@ nav {
 	color: #7923a4;
 }
 
-
+#menu {
+	margin: 0 auto; 
+}
 #main-menu, #main-menu li, #main-menu ul {
 		list-style:none outside none;
 		margin:0pt;
