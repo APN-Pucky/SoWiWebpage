@@ -43,7 +43,7 @@ function resizeIframe() {
 		$('#ifrm').css({'height':1+'px'});
 		try
 		{
-			$('#ifrm').css({'height': (document.getElementById('ifrm').contentWindow.document.body.scrollHeight+10) + 'px'});
+			$('#ifrm').css({'height': (document.getElementById('ifrm').contentWindow.document.body.scrollHeight+20) + 'px'});
 		}
 		catch(err)
 		{
